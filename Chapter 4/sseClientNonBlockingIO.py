@@ -1,40 +1,20 @@
 import json
 import queue
 import asyncio
-from sseclient import SSEClient
+from aiosseclient import aiosseclient
 
-
-messages = SSEClient('https://stream.wikimedia.org/v2/stream/recentchange')
-batch_size = 3
 max_vals = 10
-vals = queue.Queue(maxsize=max_vals)
-
-async def sse_client_get_values():
-    batch = []
-    for event in messages:
-        if event.event == 'message':
-            try:
-                change = json.loads(event.data)
-            except ValueError:
-                pass
-            else:
-                if change['meta']['domain'] == 'canary' or change['bot'] == True:
-                    continue            
-                if len(batch) < batch_size:
-                    batch.append(change)
-                else: 
-                    return batch                
+vals = queue.Queue(maxsize=max_vals)  
 
 async def fetcher():
     while True:
-        io_vals = await sse_client_get_values()
         try:
-            for item in io_vals:
-        	    vals.put(item, block=False)
+            async for item in aiosseclient('https://stream.wikimedia.org/v2/stream/recentchange'):
+                vals.put(item, block=False)
+                await asyncio.sleep(1)
         except queue.Full:
             print("Queue is full")
             return True
-        await asyncio.sleep(1)
         
 async def monitor():
     while True:
