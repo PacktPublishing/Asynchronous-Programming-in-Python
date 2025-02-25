@@ -24,7 +24,7 @@ def print_data(person):
 async def fetch_person(session, url):
     try:
         async with session.get(url) as resp:
-            return await resp.json() if resp.status == 200 else "Error in HTTP client for {url}"
+            return await resp.json() if resp.status == 200 else f"Error in HTTP client for {url}"
     except aiohttp.ClientError as e:
         logger.error("Client error: %s for %s", e, url)
     except asyncio.TimeoutError:
