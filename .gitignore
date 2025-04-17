@@ -2,5 +2,6 @@
 .env/
 .venv/
 *.png
+*.sqlite
 tmp/
 */__pycache__/
