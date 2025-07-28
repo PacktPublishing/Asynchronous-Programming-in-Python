@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2025-06-14">
+    <creator>NetworkX 3.5</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="1" title="reltype" type="string" />
+      <attribute id="2" title="position" type="long" />
+      <attribute id="3" title="parent_tag" type="string" />
+      <attribute id="4" title="parent_position" type="double" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="lang" type="string" />
+    </attributes>
+    <nodes>
+      <node id="D7gNkGo_W-igWr_V5BU0vQ" label="algorithmics">
+        <attvalues>
+          <attvalue for="0" value="English" />
+        </attvalues>
+      </node>
+      <node id="gizbicBiUheZsZoNd0jNmA" label="augrim">
+        <attvalues>
+          <attvalue for="0" value="Anglo-Norman" />
+        </attvalues>
+      </node>
+      <node id="JFwk6_hjU8uJ5NHXEypjtQ" label="algorithm">
+        <attvalues>
+          <attvalue for="0" value="English" />
+        </attvalues>
+      </node>
+      <node id="Nky1wjg6VTymaBjHyHTYow" label="algorisme">
+        <attvalues>
+          <attvalue for="0" value="Anglo-Norman" />
+        </attvalues>
+      </node>
+      <node id="jZ8qq5_eWYupoYmZdNPW0A" label="algorisme">
+        <attvalues>
+          <attvalue for="0" value="Middle English" />
+        </attvalues>
+      </node>
+      <node id="sMQjZAahXbqAUQv3cKiWzg" label="アルゴリズム">
+        <attvalues>
+          <attvalue for="0" value="Japanese" />
+        </attvalues>
+      </node>
+      <node id="IreRRQWmWAqPzVVx8wqblw" label="ics">
+        <attvalues>
+          <attvalue for="0" value="English" />
+        </attvalues>
+      </node>
+      <node id="HxxwkzsTXDG0dveqkKxUYg" label="algorithmus">
+        <attvalues>
+          <attvalue for="0" value="Latin" />
+        </attvalues>
+      </node>
+      <node id="zdz1mTQkWkSed7B0uDl7rg" label="algoritmo">
+        <attvalues>
+          <attvalue for="0" value="Esperanto" />
+        </attvalues>
+      </node>
+      <node id="RS9FSwEAV_etMYm3XHdM4w" label="augrym">
+        <attvalues>
+          <attvalue for="0" value="Middle English" />
+        </attvalues>
+      </node>
+      <node id="go_Pw-SeUHeALuSUrBAguQ" label="algorithme">
+        <attvalues>
+          <attvalue for="0" value="French" />
+        </attvalues>
+      </node>
+      <node id="VZDdYf84VcOl5Ub0MFPaGQ" label="algorismus">
+        <attvalues>
+          <attvalue for="0" value="Medieval Latin" />
+        </attvalues>
+      </node>
+      <node id="GZEFqhDIXOe2bbvkCFMXJg" label="الخَوَارِزْمِيّ">
+        <attvalues>
+          <attvalue for="0" value="Arabic" />
+        </attvalues>
+      </node>
+      <node id="Z5JfI6sfWkqz1ZIxti-OMQ" label="algoritme">
+        <attvalues>
+          <attvalue for="0" value="Danish" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="D7gNkGo_W-igWr_V5BU0vQ" target="JFwk6_hjU8uJ5NHXEypjtQ" id="0">
+        <attvalues>
+          <attvalue for="1" value="has_prefix_with_root" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="D7gNkGo_W-igWr_V5BU0vQ" target="IreRRQWmWAqPzVVx8wqblw" id="1">
+        <attvalues>
+          <attvalue for="1" value="has_suffix" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="gizbicBiUheZsZoNd0jNmA" target="JFwk6_hjU8uJ5NHXEypjtQ" id="2">
+        <attvalues>
+          <attvalue for="1" value="etymologically_related_to" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="CcR5Jxy4TxaZw-ZDYj1VfA" />
+          <attvalue for="4" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="JFwk6_hjU8uJ5NHXEypjtQ" target="jZ8qq5_eWYupoYmZdNPW0A" id="3">
+        <attvalues>
+          <attvalue for="1" value="inherited_from" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="HDNjZ6FvQri5pneHQPRuxg" />
+          <attvalue for="4" value="0.0" />
+        </attvalues>
+      </edge>
+      <edge source="JFwk6_hjU8uJ5NHXEypjtQ" target="RS9FSwEAV_etMYm3XHdM4w" id="4">
+        <attvalues>
+          <attvalue for="1" value="etymologically_related_to" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="HDNjZ6FvQri5pneHQPRuxg" />
+          <attvalue for="4" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="JFwk6_hjU8uJ5NHXEypjtQ" target="Nky1wjg6VTymaBjHyHTYow" id="5">
+        <attvalues>
+          <attvalue for="1" value="derived_from" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="CcR5Jxy4TxaZw-ZDYj1VfA" />
+          <attvalue for="4" value="0.0" />
+        </attvalues>
+      </edge>
+      <edge source="JFwk6_hjU8uJ5NHXEypjtQ" target="VZDdYf84VcOl5Ub0MFPaGQ" id="6">
+        <attvalues>
+          <attvalue for="1" value="derived_from" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1nwX6W2HSt6yyFgMonbtqA" />
+          <attvalue for="4" value="0.0" />
+        </attvalues>
+      </edge>
+      <edge source="JFwk6_hjU8uJ5NHXEypjtQ" target="GZEFqhDIXOe2bbvkCFMXJg" id="7">
+        <attvalues>
+          <attvalue for="1" value="derived_from" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1nwX6W2HSt6yyFgMonbtqA" />
+          <attvalue for="4" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="JFwk6_hjU8uJ5NHXEypjtQ" target="sMQjZAahXbqAUQv3cKiWzg" id="8">
+        <attvalues>
+          <attvalue for="1" value="borrowed_from" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="JFwk6_hjU8uJ5NHXEypjtQ" target="Z5JfI6sfWkqz1ZIxti-OMQ" id="9">
+        <attvalues>
+          <attvalue for="1" value="borrowed_from" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="6uNmKjTYSu2kBDh_VhyL4Q" />
+          <attvalue for="4" value="0.0" />
+        </attvalues>
+      </edge>
+      <edge source="HxxwkzsTXDG0dveqkKxUYg" target="Z5JfI6sfWkqz1ZIxti-OMQ" id="10">
+        <attvalues>
+          <attvalue for="1" value="derived_from" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="6uNmKjTYSu2kBDh_VhyL4Q" />
+          <attvalue for="4" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="zdz1mTQkWkSed7B0uDl7rg" target="go_Pw-SeUHeALuSUrBAguQ" id="11">
+        <attvalues>
+          <attvalue for="1" value="derived_from" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="WfBQxuBYQaab2cLGkeNSuw" />
+          <attvalue for="4" value="0.0" />
+        </attvalues>
+      </edge>
+      <edge source="zdz1mTQkWkSed7B0uDl7rg" target="VZDdYf84VcOl5Ub0MFPaGQ" id="12">
+        <attvalues>
+          <attvalue for="1" value="derived_from" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="WfBQxuBYQaab2cLGkeNSuw" />
+          <attvalue for="4" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="zdz1mTQkWkSed7B0uDl7rg" target="GZEFqhDIXOe2bbvkCFMXJg" id="13">
+        <attvalues>
+          <attvalue for="1" value="derived_from" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="WfBQxuBYQaab2cLGkeNSuw" />
+          <attvalue for="4" value="2.0" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
