@@ -7,7 +7,7 @@ def sim_temp(mean:float=15, stdv:float=5):
     threshold = (yield)
     print(f'Threshold: {threshold}')
     days_over_threshold = len([d for d in temps if d > threshold])
-    print(f'There were:{days_over_threshold} days over {threshold} degrees')
+    print(f'There were: {days_over_threshold} days over {threshold} degrees')
     yield days_over_threshold
     
 m = 22 
