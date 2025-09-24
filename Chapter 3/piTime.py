@@ -36,4 +36,4 @@ if __name__ == '__main__':
         for approx in pi_approximation_generator(num_iters):
             pi_approx = approx
         end = time.process_time_ns()
-        print(f'PIusing generator: {pi_approx} {(end - start)/1000000000} seconds')
+        print(f'PI using generator: {pi_approx} {(end - start)/1000000000} seconds')
