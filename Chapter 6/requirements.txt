@@ -1,4 +1,5 @@
 aiohttp
+aioresponses
 pytest 
 pytest-asyncio
 pytest-xdist
