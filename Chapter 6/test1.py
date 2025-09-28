@@ -1,3 +1,5 @@
+import time
+import asyncio
 import pytest
 import pytest_asyncio
 import concurrent_tasks
@@ -16,6 +18,13 @@ async def test_get_nobel_name(nobel_name):
     assert result == nobel_name
 
 @pytest.mark.asyncio
-async def test_get_odds(three_odds):
-    result = await concurrent_tasks.get_odds(3)
-    assert result == three_odds
+async def test_print_docs():
+    start_time = time.perf_counter()
+    doc1 = concurrent_tasks.print_document("long", 3)
+    doc2 = concurrent_tasks.print_document("short", 1)
+    doc3 = concurrent_tasks.print_document("med", 2)
+    await asyncio.gather(doc1, doc2, doc3)
+    end_time = time.perf_counter()
+    duration = end_time - start_time
+    assert duration == pytest.approx(3.0, abs=0.1)
+

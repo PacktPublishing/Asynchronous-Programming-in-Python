@@ -1,3 +1,4 @@
+import time
 import asyncio
 import aiohttp
 
@@ -13,18 +14,16 @@ async def get_nobel_name(nid):
                 print(len(nobel)," Nobel found!")
                 return(nobel[0]["knownName"]["en"])
 
-async def get_odds(max_num):
-    print("Starting get_odds")
-    res = []
-    for num in range(0,max_num):
-        r = (num % 2 != 0)
-        res.append(r)
-        print(f"{num} is odd? {r}")
-        await asyncio.sleep(1)
-    return(res)
+async def print_document(doc_name, sleep_time):
+    print(f"[{time.strftime('%X')}] Print '{doc_name}'...")
+    await asyncio.sleep(sleep_time)
+    print(f"[{time.strftime('%X')}] Finished.")
 
 async def main():
-    await asyncio.gather(get_nobel_name(659), get_odds(10))
+    doc1 = print_document("Report.pdf", 3)
+    doc2 = print_document("Presentation.pptx", 1)
+    doc3 = print_document("Brochure.docx", 2)
+    await asyncio.gather(get_nobel_name(659), doc1, doc2, doc3)
     
 if __name__ == "__main__":
     asyncio.run(main())
