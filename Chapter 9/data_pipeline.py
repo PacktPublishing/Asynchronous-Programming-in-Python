@@ -12,10 +12,10 @@ from pipeline_steps import (
 HF_DATASET="Nickmancol/mini_etymology"
 
 async def main():
-    pipeline = task(stream_huggingface_etymology_data) 
-        | task(group_records_by_term_id, branch=True) 
-        | task(create_networkx_subgraph, branch=True) 
-        | task(merge_into_global_graph)
+    pipeline = task(stream_huggingface_etymology_data) \
+    | task(group_records_by_term_id, branch=True) \
+    | task(create_networkx_subgraph, branch=True) \
+    | task(merge_into_global_graph)
     async for _ in pipeline(HF_DATASET):
         pass
 
