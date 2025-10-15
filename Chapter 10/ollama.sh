@@ -8,6 +8,8 @@ docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 #--device /dev/nvidia-uvm:/dev/nvidia-uvm   \
 #--device /dev/nvidia-uvm-tools:/dev/nvidia-uvm-tools   \
 #-v /usr/share/ollama:/root/.ollama:z -p 11434:11434 --name ollama ollama/ollama
+echo "Pulling control model"
+docker exec -it ollama ollama pull gemma3:270m
 echo "Pulling cogito:8b model"
 docker exec -it ollama ollama pull cogito:8b
 echo "Pulling gemma3n:e4b model"
